@@ -9,13 +9,12 @@ Follow these steps exactly.
 1. Create CMS and commerce databases in a SQL server instance
 2. Set connection strings accordingly in Episerver.Console.Web and Episerver.Console.Client
 3. Run Initialize-EPiDatabase with default project Episerver.Console.Web
-4. Run Update-EPiDatabase with default project Episerver.Console.Web
-5. Start web site Episerver.Console.Web
-6. [Login](http://localhost:51517/EpiServer) using your Windows account
-7. Execute migration steps
-8. Stop debugging web site
-9. Run Episerver.Console.Client
-10. Start web site
+4. Start web site Episerver.Console.Web
+5. [Login](http://localhost:51517/Util/Login.aspx) using your Windows account
+6. Execute migration steps
+7. Stop debugging web site
+8. Run Episerver.Console.Client
+9. Start web site
 
 ## Result ##
 You should now see the start page, which was programmatically created in the console application. The console application also created a catalog, category, product and a variant. Enter the [catalog UI](http://localhost:51517/EPiServer/Commerce/Catalog) to verify this.
