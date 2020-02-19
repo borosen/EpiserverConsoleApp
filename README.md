@@ -11,7 +11,7 @@ Follow these steps exactly.
 3. Run Initialize-EPiDatabase with default project Episerver.Console.Web
 4. Run Update-EPiDatabase with default project Episerver.Console.Web
 5. Start web site Episerver.Console.Web
-6. [Login](http://localhost:51517/Util/login.aspx) using your Windows account
+6. [Login](http://localhost:51517/EpiServer) using your Windows account
 7. Execute migration steps
 8. Stop debugging web site
 9. Run Episerver.Console.Client
