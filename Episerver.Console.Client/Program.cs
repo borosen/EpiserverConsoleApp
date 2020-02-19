@@ -12,14 +12,13 @@ namespace Episerver.Console.Client
         public static void Main(string[] args)
         {
             GenericHostingEnvironment.Instance = new EPiServerHostingEnvironment();
-            InitializationModule.FrameworkInitialization(HostType.Installer);
+            InitializationModule.FrameworkInitialization(HostType.TestFramework);
             System.Console.WriteLine("EPiServer initialized");
 
             Container.GetInstance<IApplication>().Run(); // is set via initialization module
 
             InitializationModule.FrameworkUninitialize();
             System.Console.WriteLine("EPiServer uninitialized");
-            System.Console.ReadLine();
         }
     }
 }

@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Episerver.Console.Web", "Episerver.Console.Web\Episerver.Console.Web.csproj", "{312706C6-31F3-4AD5-ABB8-6745862ABE36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Episerver.Console.Domain", "Episerver.Console.Domain\Episerver.Console.Domain.csproj", "{344DFA43-829C-4E88-A734-6DF2135493C3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Episerver.Console.Client", "Episerver.Console.Client\Episerver.Console.Client.csproj", "{C1780671-6E09-42BB-AEB6-9A1B414579F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{75EAC0BB-3AB0-42AB-90AE-F89D3C0A52A1}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F0DC746-754F-445A-AAA6-DBC1E79FE484}
 	EndGlobalSection
 EndGlobal

@@ -8,7 +8,6 @@ using EPiServer.DataAccess;
 using EPiServer.Security;
 using Mediachase.Commerce;
 using Mediachase.Commerce.Catalog;
-using Mediachase.Commerce.Core;
 using Mediachase.Commerce.Markets;
 using Mediachase.Commerce.Pricing;
 
@@ -40,7 +39,6 @@ namespace Episerver.Console.Client.App.Migrations
 
         public void Dump()
         {
-            var applicationId = AppContext.Current.ApplicationId;
             var languageBranch = _languageBranchRepository.ListAll().First();
 
             var currentMarket = _currentMarket.GetCurrentMarket();
@@ -82,7 +80,7 @@ namespace Episerver.Console.Client.App.Migrations
             var price = new PriceValue
             {
                 UnitPrice = new Money(100, market.DefaultCurrency),
-                CatalogKey = new CatalogKey(applicationId, variant.Code),
+                CatalogKey = new CatalogKey(variant.Code),
                 MarketId = market.MarketId,
                 ValidFrom = DateTime.Today.AddYears(-1),
                 ValidUntil = DateTime.Today.AddYears(1),
