@@ -1,6 +1,6 @@
 # Running Episerver as a console application #
 
-This project shows that Episerver (CMS and commerce) can be run as console application. I have personally used this to run long-running jobs, which otherwise would be interrupted by IIS. 
+This project shows that Episerver (CMS and commerce) can be run as console application. A clone from [AndreasJilvero](https://github.com/AndreasJilvero/EpiserverConsoleApp).
 
 ## Install ##
 
